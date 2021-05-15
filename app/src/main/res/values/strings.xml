@@ -64,8 +64,8 @@
     <string name="chart1_3">Slim-normal</string>
 
     <string name="quiz_title">Test</string>
-    <string name="quiz_button_Submit">Test</string>
-    <string name="quiz_result">Następne pytanie</string>
+    <string name="quiz_button_Submit">Następne pytanie</string>
+    <string name="quiz_result">Wynik: </string>
 
     <string-array name="quiz_1">
         <item>Ile jest 2+2?</item>
