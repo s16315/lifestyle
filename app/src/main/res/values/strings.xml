@@ -58,9 +58,64 @@
         <item>Pomidorki umyj, przekrój na cztery części, umieść w misce z sosem, dodaj porwane listki rukoli, szczypior i plastry sera, całość dokładnie wymieszaj. Sałatkę podawaj posypaną grzankami z wierzchu.\</item>
     </string-array>
 
+    <string name="charts_title">Adult obesity in UK</string>
     <string name="chart1_1">Overweight</string>
     <string name="chart1_2">Obese</string>
     <string name="chart1_3">Slim-normal</string>
+
+    <string name="quiz_title">Test</string>
+    <string name="quiz_button_Submit">Test</string>
+    <string name="quiz_result">Następne pytanie</string>
+
+    <string-array name="quiz_1">
+        <item>Ile jest 2+2?</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>E</item>
+    </string-array>
+
+    <string-array name="quiz_2">
+        <item>Ile jest 3*2?</item>
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>E</item>
+    </string-array>
+
+    <string-array name="quiz_3">
+        <item>Ile jest 2+4?</item>
+        <item>1</item>
+        <item>6</item>
+        <item>4</item>
+        <item>E</item>
+    </string-array>
+
+    <string-array name="quiz_4">
+        <item>Ile jest 2+5?</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="quiz_5">
+        <item>Ile jest 3*3?</item>
+        <item>9</item>
+        <item>3</item>
+        <item>4</item>
+        <item>E</item>
+    </string-array>
+
+    <string-array name="quiz_6">
+        <item>Ile jest 7+2?</item>
+        <item>11</item>
+        <item>3</item>
+        <item>4</item>
+        <item>E</item>
+    </string-array>
+
+
 
 
 </resources>

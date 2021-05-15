@@ -5,10 +5,31 @@
     android:layout_height="match_parent"
     tools:context=".ActivityChart">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="3dp">
+
+    <TextView
+        android:id="@+id/chartsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="@string/charts_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+         />
+
     <com.anychart.AnyChartView
         android:id="@+id/chartView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

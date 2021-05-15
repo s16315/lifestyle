@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeStyle">
+        <activity android:name=".ActivityQuiz"></activity>
         <activity android:name=".ActivityChart" />
         <activity android:name=".RmiActivity" />
         <activity android:name=".ActivityHb" />

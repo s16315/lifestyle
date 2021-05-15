@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<Button>(R.id.main_button_quiz).setOnClickListener{
+            val intent = Intent(this, ActivityQuiz::class.java)
+            startActivity(intent)
+        }
 
     }
 }
