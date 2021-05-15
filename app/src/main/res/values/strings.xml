@@ -24,6 +24,7 @@
     <string name="bmr_toggle_male">Male</string>
     <string name="bmr_toggle_female">Female</string>
     <string name="bmr_toggle_text">Change sex</string>
+    <string name="bmr_button_calculate">Calculate</string>
     <string name="title_activity_bmi">BmiActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
