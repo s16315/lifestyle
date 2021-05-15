@@ -19,6 +19,7 @@
     <string name="bmi_2_category_name">You are normal weight</string>
     <string name="bmi_3_category_name">You are overweight</string>
     <string name="bmi_4_category_name">You are obese weight</string>
+    <string name="bmi_button_calculate">Calculate</string>
     <string name="bmi_bad_data">Your data is out of range!</string>
     <string name="bmr_toggle_male">Male</string>
     <string name="bmr_toggle_female">Female</string>
