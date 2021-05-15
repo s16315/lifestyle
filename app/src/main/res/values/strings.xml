@@ -2,6 +2,8 @@
     <string name="landing_button_calculate_bmi">BMI Calculator</string>
     <string name="landing_button_calculate_hb">Harris-Benedict Calculator</string>
     <string name="landing_button_culinary_recipes">Culinary recipes</string>
+    <string name="landing_button_charts">Statistics</string>
+    <string name="landing_button_quiz">Quiz</string>
     <string name="app_name">Body coach</string>
     <string name="text_bmi_result_title">Your Body Mass Index</string>
     <string name="input_hint_weight">Weight in kilograms</string>
@@ -55,6 +57,10 @@
         <item>Krok 4</item>
         <item>Pomidorki umyj, przekrój na cztery części, umieść w misce z sosem, dodaj porwane listki rukoli, szczypior i plastry sera, całość dokładnie wymieszaj. Sałatkę podawaj posypaną grzankami z wierzchu.\</item>
     </string-array>
+
+    <string name="chart1_1">Overweight</string>
+    <string name="chart1_2">Obese</string>
+    <string name="chart1_3">Slim-normal</string>
 
 
 </resources>

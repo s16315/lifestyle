@@ -21,5 +21,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RmiActivity::class.java)
             startActivity(intent)
         }
+        findViewById<Button>(R.id.main_button_chart).setOnClickListener{
+            val intent = Intent(this, ActivityChart::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

@@ -16,16 +16,14 @@ class ActivityChart : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chart)
 
-        val pie: Pie = AnyChart.pie()
+        val pie1: Pie = AnyChart.pie()
         val chartData : MutableList<DataEntry> = ArrayList()
+        chartData.add(ValueDataEntry(getString(R.string.chart1_1), 62.0))
+        chartData.add(ValueDataEntry(getString(R.string.chart1_2), 25.0))
+        chartData.add(ValueDataEntry(getString(R.string.chart1_3), 13.0))
 
-        chartData.add(ValueDataEntry("overweight", 62.0))
-        chartData.add(ValueDataEntry("obese", 25.0))
-        chartData.add(ValueDataEntry("slim-normal", 13.0))
-
-        pie.data(chartData)
-
+        pie1.data(chartData)
         val chartView = findViewById<View>(R.id.chartView) as AnyChartView
-        chartView.setChart(pie)
+        chartView.setChart(pie1)
     }
 }
