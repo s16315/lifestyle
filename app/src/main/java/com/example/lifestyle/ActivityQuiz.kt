@@ -2,14 +2,16 @@ package com.example.lifestyle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.ToggleButton
-import kotlin.math.absoluteValue
 
 class ActivityQuiz : AppCompatActivity() {
     var counter :Int = 1
-    //val answers : Array<Int>
+    var points : Int = 0
+    var keys: IntArray = intArrayOf(0, 0, 0, 0)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,15 +30,34 @@ class ActivityQuiz : AppCompatActivity() {
     fun nextQuestion(){
         this.counter = this.counter + 1
         val quiz: Array<String>
+        this.points = this.points + this.keys[0] + this.keys[1] + this.keys[2] + this.keys[3]
         when (this.counter){
-            2 ->  quiz = resources.getStringArray(R.array.quiz_2)
-            3 ->  quiz = resources.getStringArray(R.array.quiz_3)
-            4 ->  quiz = resources.getStringArray(R.array.quiz_4)
-            5 ->  quiz = resources.getStringArray(R.array.quiz_5)
-            6 ->  quiz = resources.getStringArray(R.array.quiz_6)
-            else -> quiz = resources.getStringArray(R.array.quiz_1)
+            2 -> {
+                quiz = resources.getStringArray(R.array.quiz_2)
+                this.keys = intArrayOf(0, 0, 1, 0)
+            }
+            3 -> {
+                quiz = resources.getStringArray(R.array.quiz_3)
+                this.keys = intArrayOf(0, 1, 0, 0)
+            }
+            4 -> {
+                quiz = resources.getStringArray(R.array.quiz_4)
+                this.keys = intArrayOf(1, 0, 0, 1)
+            }
+            5 -> {
+                quiz = resources.getStringArray(R.array.quiz_5)
+                this.keys = intArrayOf(1, 0, 0, 0)
+            }
+            6 -> {
+                quiz = resources.getStringArray(R.array.quiz_6)
+                this.keys = intArrayOf(0, 0, 1, 1)
+            }
+            else -> {
+                quiz = resources.getStringArray(R.array.quiz_1)
+                this.keys = intArrayOf(0, 0, 1, 0)
+            }
         }
-        if (this.counter < 6){
+        if (this.counter < 7){
             val quizQuestionTextView = findViewById<TextView>(R.id.quizQuestion) as TextView
             val quizAnswer1Button = findViewById<ToggleButton>(R.id.quizAnswer1) as ToggleButton
             val quizAnswer2Button = findViewById<ToggleButton>(R.id.quizAnswer2) as ToggleButton
@@ -59,7 +80,17 @@ class ActivityQuiz : AppCompatActivity() {
 
         }
         else {
-            findViewById<Button>(R.id.quizSubmit).text =  getString(R.string.quiz_result)
+            findViewById<Button>(R.id.quizSubmit).visibility = View.INVISIBLE
+            findViewById<ToggleButton>(R.id.quizAnswer1).visibility = View.INVISIBLE
+            findViewById<ToggleButton>(R.id.quizAnswer2).visibility = View.INVISIBLE
+            findViewById<ToggleButton>(R.id.quizAnswer3).visibility = View.INVISIBLE
+            findViewById<ToggleButton>(R.id.quizAnswer4).visibility = View.INVISIBLE
+            findViewById<TextView>(R.id.quizQuestion).visibility = View.INVISIBLE
+            val resultTextView = findViewById<TextView>(R.id.quizResult)
+            resultTextView.text = getString(R.string.quiz_result)
+            resultTextView.append(this.points.toString())
+            resultTextView.visibility = View.VISIBLE
+
         }
 
     }
