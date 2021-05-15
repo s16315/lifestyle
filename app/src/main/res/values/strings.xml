@@ -32,6 +32,29 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="rec_title">Sałatka z rukoli i pomidorów koktajlowych</string>
+    <string name="rec_ingredients_title">Składniki</string>
+    <string-array name="rec_ingredients">
+        <item>rukola liście - 250 gramów</item>
+        <item>pomidory koktajlowe - 200 gramów</item>
+        <item>ser gouda - 200 gramów</item>
+        <item>sos sałatkowy włoski Knorr - 1 opakowanie</item>
+        <item>oliwa z oliwek - 5 łyżek</item>
+        <item>ząbek czosnku - 1 sztuka</item>
+        <item>kajzerki (mogą być lekko czerstwe)- 2 sztuki</item>
+        <item>szczypiorek - 0.5 pęczka</item>
+    </string-array>
+    <string name="rec_steps_title">Przygotowanie krok po kroku</string>
+    <string-array name="rec_steps">
+        <item>Krok 1</item>
+        <item>Czosnek rozetrzyj na miazgę i połącz z oliwą (3 łyżki). Kajzerki pokrój w kostkę pół centymetra na pół , pomieszaj z oliwą (2 łyżki) i czosnkiem. Rozłóż na blasze wyłożonej pergaminem, wstaw na około 10 minut do nagrzanego do 180*C piekarnika, aż zrobią się złociste i chrupiące. Możesz też smażyć je na patelni.</item>
+        <item>Krok 2</item>
+        <item>W dużej misce wymieszaj sos sałatkowy włoski z oliwą i wodą, zgodnie z przepisem na opakowaniu.</item>
+        <item>Krok 3</item>
+        <item>Szczypior drobno posiekaj, ser pokrój w cienkie, długie na 2–3 cm słupki.</item>
+        <item>Krok 4</item>
+        <item>Pomidorki umyj, przekrój na cztery części, umieść w misce z sosem, dodaj porwane listki rukoli, szczypior i plastry sera, całość dokładnie wymieszaj. Sałatkę podawaj posypaną grzankami z wierzchu.\</item>
+    </string-array>
+
+
 </resources>
